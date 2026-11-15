@@ -13,7 +13,7 @@ Research question: is the mean number of daily rentals different on clear days (
 | Two-sample t-test | `hypothesis_testing/` |
 
 ## Files
-
+```text
 bike-sharing-project/
 ├── README.md
 |
@@ -24,3 +24,4 @@ bike-sharing-project/
 │
 └── R/
     └── cleaning.R
+```
