@@ -1,11 +1,13 @@
 
 #---------- MATH 167R Group 8 - Data Visualizations Script ----------#
+#***Note that when running I have to set my current working directory to the main folder
+#**Click Session -> Set Working Directory -> Choose the main folder holding the files
 
 #---------- Dataset ----------#
 
 bike <- read.csv("data/cleaned_day.csv")
 
-#Convert weather conditions into a factor
+#convert weather conditions into a factor
 bike$weathersit <- factor(bike$weathersit, levels = c("Clear", "Mist/Cloudy"))
 
 head(bike)
