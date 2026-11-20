@@ -1,27 +1,45 @@
-# MATH 167R Group 8 — Bike Sharing
+# MATH 167R – Bike Sharing Project
 
-Daily Capital Bikeshare rentals, 2011–2012, from the [UCI Bike Sharing dataset](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset).
+## Overview
 
-Research question: is the mean number of daily rentals different on clear days (`weathersit = 1`) than on misty/cloudy days (`weathersit = 2`)? The comparison uses a two-sample t-test at alpha 0.05. That test is a separate part of the project.
+This project uses the Bike Sharing Dataset from the UCI Machine Learning Repository. We are comparing average daily bike rentals between clear-weather days and misty/cloudy days using descriptive statistics, visualizations, and a Welch two-sample t-test.
 
-## Who does what
+## Group Members
 
-| Part | Where |
-| --- | --- |
-| Data cleaning and descriptive statistics | `R/01_clean_daily_data.R`, `R/02_descriptive_statistics.R`, `cleaning_and_statistics.Rmd` |
-| Graphs and pattern write-up | `visuals/` |
-| Two-sample t-test | `hypothesis_testing/` |
+- Stephani Marie Soriano – Data Cleaning and Descriptive Statistics
+- Anson Fong – Hypothesis Testing
+- Nathan Montero – Data Visualization
 
-## Files
-```text
-bike-sharing-project/
+## Project Structure
+
+```
+Bike-Sharing/
 ├── README.md
-|
 ├── data/
 │   ├── day.csv
 │   ├── cleaned_day.csv
 │   └── summary_statistics.csv
-│
-└── R/
-    └── cleaning.R
+├── R/
+│   ├── cleaning.R
+│   └── HypothesisTesting.R
+├── visuals/
+│   └── visualizations.R
+└── reports/
+    └── HypothesisReport.md
 ```
+
+## Running the Code
+
+Set the working directory to the main `Bike-Sharing` folder.
+
+Run the scripts in this order:
+
+1. `R/cleaning.R`
+2. `visuals/visualizations.R`
+3. `R/HypothesisTesting.R`
+
+## Dataset Source
+
+UCI Bike Sharing Dataset (2011–2012)
+
+https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset
